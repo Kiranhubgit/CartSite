@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Cart Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="cart-header">
+    <!-- <div class="logo">MyStore</div> -->
+    <div class="logo">
+      <img src="logo.png" alt="">
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><i class="fas fa-search" title="Search"></i></li>
+        <!-- <li><a href="#" class="cart-icon">🛒 Cart</a></li> -->
+        <li><i class="fas fa-shopping-cart" title="Cart"></i></li>
+        <li><i class="fas fa-heart" title="Wishlist"></i></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <section class="main-back">
+    <div>
+      <img src="back-image.png" alt="">
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="cart-container">
+   
+    <!-- Cart Items Section -->
+    <section class="cart-items">
+
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="cart-items">
+          <!-- Dynamic content -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Cart Totals Section -->
+    <aside class="cart-totals">
+      <h3>Cart Totals</h3>
+      <div class="totals">
+        <p>Subtotal: <span id="cart-subtotal">₹0.00</span></p>
+        <p>Total: <span id="cart-total">₹0.00</span></p>
+      </div>
+      <button class="checkout-btn">Check Out</button>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer class="cart-footer">
+    <div class="service-icons">
+      <!-- High Quality Section -->
+      <div>
+        <i class="fas fa-check-circle"></i>
+        <span>High Quality</span>
+        <p>Crafted from top materials</p>
+      </div>
+      <!-- Warranty Protection Section -->
+      <div>
+        <i class="fas fa-shield-alt"></i>
+        <span>Warranty Protection</span>
+        <p>Over 2 years</p>
+      </div>
+      <!-- Free Shipping Section -->
+      <div>
+        <i class="fas fa-truck"></i>
+        <span>Free Shipping</span>
+        <p>order over 150 $</p>
+      </div>
+      <!-- 24/7 Customer Support Section -->
+      <div>
+        <i class="fas fa-headset"></i>
+        <span>24/7 Customer Support</span>
+        <p>Dedicated Support</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
